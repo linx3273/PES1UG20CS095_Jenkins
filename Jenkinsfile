@@ -17,6 +17,8 @@ pipeline{
         }
         stage('Test'){
             steps{
+                sh 'pwd'
+                sh 'ls'
                 sh 'hello_exec'
                 echo "Test Completed."
             }
