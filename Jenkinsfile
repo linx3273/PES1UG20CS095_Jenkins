@@ -16,7 +16,7 @@ pipeline{
         }
         stage('Test'){
             steps{
-                sh 'hello_exec'
+                sh 'main/hello_exec'
                 echo "Test Completed."
             }
         }
