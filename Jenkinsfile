@@ -11,12 +11,13 @@ pipeline{
         stage('Build'){
             steps{
                 sh 'make'
+                sh 'pwd'
                 echo "Build Successful."
             }
         }
         stage('Test'){
             steps{
-                sh 'main/hello_exec'
+                sh 'hello_exec'
                 echo "Test Completed."
             }
         }
